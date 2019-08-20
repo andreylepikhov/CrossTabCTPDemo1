@@ -60,11 +60,11 @@
             this.crossTabTotalCell9 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell10 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell11 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.crossTabGeneralStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabHeaderStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -134,13 +134,12 @@
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
             this.xrCrossTab1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 10.00001F);
             this.xrCrossTab1.Name = "xrCrossTab1";
-            this.xrCrossTab1.PrintOptions.PrintLayout = DevExpress.XtraReports.UI.PrintLayout.AcrossThenDown;
             crossTabRowDefinition1.Visible = false;
             crossTabRowDefinition2.Visible = false;
             this.xrCrossTab1.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
             crossTabRowDefinition1,
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(50.00001F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(49.99997F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(50.00002F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(49.99998F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
             crossTabRowDefinition2,
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F)});
@@ -355,6 +354,12 @@
             this.crossTabTotalCell11.Name = "crossTabTotalCell11";
             this.crossTabTotalCell11.RowIndex = 5;
             // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataMember = "GetData";
+            this.objectDataSource1.DataSource = typeof(CrossTabDemo1.DataItems);
+            this.objectDataSource1.Name = "objectDataSource1";
+            // 
             // crossTabGeneralStyle1
             // 
             this.crossTabGeneralStyle1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
@@ -386,12 +391,6 @@
             this.crossTabTotalStyle1.Name = "crossTabTotalStyle1";
             this.crossTabTotalStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.crossTabTotalStyle1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataMember = "GetData";
-            this.objectDataSource1.DataSource = typeof(CrossTabDemo1.DataItems);
-            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // XtraReport1
             // 
